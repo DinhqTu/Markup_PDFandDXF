@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+// mark up
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+}
+
+.gemini-container {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+/* #myCanvas {
+  width: 100vw;
+  height: 100vh;
+} */
+.markup-toolbar {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 10;
+}
+.markup-toolbar-btn {
+  min-width: 50px;
+  height: 30px;
+  cursor: pointer;
+  padding: 2px;
+  border: 1px solid cornflowerblue;
+}
+.markup-toolbar-btn:hover {
+  border: 1px solid peru;
+}
+.btn-active {
+  background-color: cornflowerblue;
+}
+.markup-manager {
+  width: 400px;
+  height: 400px;
+  right: 20px;
+  top: 60px;
+  position: absolute;
+  background: white;
+}
+.markup-manager-text {
+  width: 398px;
+  height: calc(100% - 40px);
+  font-size: 10px;
+  background-color: #eeeeee;
+  position: absolute;
+  margin: 1px;
+}
+.markup-manager-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 3px;
+  margin-left: 5px;
+}
+.hide {
+  display: none;
+}
